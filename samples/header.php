@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>PNOT Ltd. | Technical Solutions</title>
-  <link rel="stylesheet" href="/style/main.css">
+    <title>PNOT Ltd. | Technical Solutions</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
 </head>
 <body>
 <a href="/index.php">

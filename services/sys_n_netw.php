@@ -32,7 +32,7 @@ require_once __DIR__ . "/../samples/header.php";
 
         <p>Explore our resources to learn more about these critical areas and understand how they’re transforming the world of IT!</p>
         <div style="text-align: center">
-            <a href="/scripts/path_finder.php?q=sn_prices">Dive</a>
+            <a href="/scripts/path_finder.php?q=sn_prices" target="_blank">Dive</a>
         </div>
     </div>
 </div>
