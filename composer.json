@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-4": {
-            "src\\main_page\\" : "src/main_page/"
+            "src\\main_page\\" : "src/main_page/",
+            "src\\system_and_networks\\" : "src/system_and_networks/"
         }
     }
 }

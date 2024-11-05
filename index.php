@@ -10,29 +10,32 @@ $settings = new MainPage();
 ?>
 
 <div class="main">
-    <marquee class="marquee" direction="left">!WARNING! 30% discount on Windows installation !WARNING!</marquee>
+    <marquee class="marquee" direction="left"><?= $settings->discount_message[array_rand($settings->discount_message)] ?></marquee>
 
     <p>Small System Info:</p>
-    <p class="blinking">Site updated: <?= $settings->getCurrentDate() ?> — <?= $settings->getCurrentTime() ?></p>
+    <div style="text-align: center; padding: 0">
+        <p class="blinking">Site updated: <?= $settings->getCurrentDate() ?> — <?= $settings->getCurrentTime() ?></p>
+        <p class="blinking">Online: <?= $settings->getActive() ?></p>
+    </div>
 
     <h2 style="margin-bottom: -20px;">Site navigation:</h2>
     <div style="text-align: center;">
         <ul style="list-style-type: none; padding: 0; display: inline-flex; flex-direction: column; align-items: flex-start;">
             <li class="li-element">
-                <img src="/assets/klipartz.com.png" alt="note" class="note-element">
-                <a href="http://example.com" target="_blank">System & Networks</a>
+                <img src="/assets/note.png" alt="note" class="note-element">
+                <a href="/scripts/path_finder.php?q=system_and_networks">System & Networks</a>
             </li>
             <li class="li-element">
-                <img src="/assets/klipartz.com.png" alt="note" class="note-element">
-                <a href="http://example.com" target="_blank">Web Hosting</a>
+                <img src="/assets/note.png" alt="note" class="note-element">
+                <a href="/scripts/path_finder.php?q=web_hosting">Web Hosting</a>
             </li>
             <li class="li-element">
-                <img src="/assets/klipartz.com.png" alt="note" class="note-element">
-                <a href="http://example.com" target="_blank">Equipment & Repairment</a>
+                <img src="/assets/note.png" alt="note" class="note-element">
+                <a href="/scripts/path_finder.php?q=equipment_and_repair">Equipment & Repair</a>
             </li>
             <li style="display: flex; align-items: center;">
-                <img src="/assets/klipartz.com.png" alt="note" class="note-element">
-                <a href="http://example.com" target="_blank">Contact us</a>
+                <img src="/assets/note.png" alt="note" class="note-element">
+                <a href="/scripts/path_finder.php?q=contact_us">Contact us</a>
             </li>
         </ul>
     </div>

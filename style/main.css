@@ -25,6 +25,7 @@ a:hover {
 
 .blinking {
     animation: blinker 1s step-start infinite;
+    margin-bottom: -10px;
 }
 
 @keyframes blinker {
