@@ -4,14 +4,14 @@ $routes = [
 	"system_and_networks" => "/scripts/path_finder.php?q=system_and_networks",
 	"web_hosting" => "/scripts/path_finder.php?q=web_hosting",
 	"equipment_and_repair" => "/scripts/path_finder.php?q=equipment_and_repair",
-	"about_us" => "/scripts/path_finder.php?q=contact_us"
+	"contact_us" => "/scripts/path_finder.php?q=contact_us"
 ];
 
 $redirect = [
 	"system_and_networks" => "/services/sys_n_netw.php",
 	"web_hosting" => "/services/web.php",
 	"equipment_and_repair" => "/services/equip_n_repair.php",
-	"about_us" => "/services/contact.php"
+	"contact_us" => "/services/contact.php"
 ];
 
 $query = "";
@@ -54,10 +54,10 @@ switch ($query)
 		exit;
 	}
 
-	case "about_us":
+	case "contact_us":
 	{
 		$path = "
-			<p>PS C:\<a href='/index.php'>main</a>&#8594;<a href='" . $routes[$query] . "'>about_us</a>\</p>
+			<p>PS C:\<a href='/index.php'>main</a>&#8594;<a href='" . $routes[$query] . "'>contact_us</a>\</p>
 		";
 
 		header("Location: " . $redirect[$query] . "?path=" . urlencode($path));
