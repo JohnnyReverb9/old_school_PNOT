@@ -12,7 +12,7 @@
 
 if (isset($_GET["path"]))
 {
-	echo $_GET["path"];
+	echo "<div class='nav-bar'>" . $_GET["path"] . "</div>";
 }
 
 ?>

@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 
-h1 {
+.h1_main {
     color: #ff0000;
     font-size: 3em;
 }
@@ -47,6 +47,13 @@ a:hover {
     background-color: #ffffff;
 }
 
+.price-table {
+    /*margin: auto;*/
+    border: 1px solid #000;
+    /*width: 40%;*/
+    background-color: #ffffff;
+}
+
 .table td,
 .table th {
     border: 1px solid #000;
@@ -62,4 +69,14 @@ a:hover {
 
 .note-element {
     margin-right: 8px;
+}
+
+.container {
+    margin-left: 160px;
+    margin-right: 160px;
+    text-align: left;
+}
+
+.nav-bar {
+    font-size: 1.3em;
 }

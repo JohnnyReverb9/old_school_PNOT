@@ -9,7 +9,7 @@ $settings = new MainPage();
 
 ?>
 
-<div class="main">
+<div class="main" style="text-align: center;">
     <marquee class="marquee" direction="left"><?= $settings->discount_message[array_rand($settings->discount_message)] ?></marquee>
 
     <p>Small System Info:</p>

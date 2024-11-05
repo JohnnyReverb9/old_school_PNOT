@@ -4,14 +4,16 @@ $routes = [
 	"system_and_networks" => "/scripts/path_finder.php?q=system_and_networks",
 	"web_hosting" => "/scripts/path_finder.php?q=web_hosting",
 	"equipment_and_repair" => "/scripts/path_finder.php?q=equipment_and_repair",
-	"contact_us" => "/scripts/path_finder.php?q=contact_us"
+	"contact_us" => "/scripts/path_finder.php?q=contact_us",
+	"sn_prices" => "/scripts/path_finder.php?q=sn_prices",
 ];
 
 $redirect = [
 	"system_and_networks" => "/services/sys_n_netw.php",
 	"web_hosting" => "/services/web.php",
 	"equipment_and_repair" => "/services/equip_n_repair.php",
-	"contact_us" => "/services/contact.php"
+	"contact_us" => "/services/contact.php",
+	"sn_prices" => "/services/sn_prices.php",
 ];
 
 $query = "";
@@ -58,6 +60,17 @@ switch ($query)
 	{
 		$path = "
 			<p>PS C:\<a href='/index.php'>main</a>&#8594;<a href='" . $routes[$query] . "'>contact_us</a>\</p>
+		";
+
+		header("Location: " . $redirect[$query] . "?path=" . urlencode($path));
+
+		exit;
+	}
+
+	case "sn_prices":
+	{
+		$path = "
+			<p>PS C:\<a href='/index.php'>main</a>&#8594;<a href='/scripts/path_finder.php?q=system_and_networks'>system_and_networks</a>&#8594;<a href='" . $routes[$query] . "'>prices</a>\</p>
 		";
 
 		header("Location: " . $redirect[$query] . "?path=" . urlencode($path));
