@@ -1,0 +1,64 @@
+body {
+    background-color: #bbbfbe;
+    font-family: Arial, sans-serif;
+    color: #000080;
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+    font-size: 3em;
+}
+
+hr {
+    border: 1px solid #000;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.blinking {
+    animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.marquee {
+    font-size: 1.5em;
+    color: #ff0000;
+
+}
+
+.table {
+    margin: auto;
+    border: 1px solid #000;
+    width: 40%;
+    background-color: #ffffff;
+}
+
+.table td,
+.table th {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.li-element {
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.note-element {
+    margin-right: 8px;
+}

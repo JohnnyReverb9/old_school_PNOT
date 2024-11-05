@@ -1,2 +1,7 @@
 {
+    "autoload": {
+        "psr-4": {
+            "src\\main_page\\" : "src/main_page/"
+        }
+    }
 }
