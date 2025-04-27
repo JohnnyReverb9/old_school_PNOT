@@ -1,8 +1,8 @@
 <?php
+require_once __DIR__ . "/bootstrap.php";
 
 use src\main_page\MainPage;
 
-require_once __DIR__ . "/vendor/autoload.php";
 require_once __DIR__ . "/samples/header.php";
 
 $settings = new MainPage();

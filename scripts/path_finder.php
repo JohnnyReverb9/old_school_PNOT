@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/../bootstrap.php";
+
 $routes = [
 	"system_and_networks" => "/scripts/path_finder.php?q=system_and_networks",
 	"web_hosting" => "/scripts/path_finder.php?q=web_hosting",
