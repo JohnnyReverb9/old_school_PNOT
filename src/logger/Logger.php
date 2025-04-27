@@ -60,7 +60,7 @@ class Logger
 		$this->log("debug", $message, $context);
 	}
 	
-	protected function registerHandlers()
+	public function registerHandlers()
 	{
 		set_error_handler([$this, "handleError"]);
 		set_exception_handler([$this, "handleException"]);
@@ -70,6 +70,10 @@ class Logger
 	public function handleError($errno, $errstr, $errfile, $errline)
 	{
 		$this->error("PHP Error [$errno]: $errstr in $errfile on line $errline");
+
+		http_response_code(500);
+		require __DIR__ . '/../../error_500.php';
+		exit;
 	}
 
 	public function handleException($exception)
